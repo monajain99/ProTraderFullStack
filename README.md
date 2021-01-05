@@ -12,10 +12,8 @@
   <img src="https://cdn.vox-cdn.com/thumbor/fbrTLtxuP2D29o8VJUaE-u3NKfU=/0x0:792x613/1200x800/filters:focal(300x237:426x363)/cdn.vox-cdn.com/uploads/chorus_image/image/59850273/Docker_logo_011.0.png" alt="sqlalchemy-logo" width="50">
 </h1>
 
-# Database Schema
-<h1 align="center">
+#### Database
 <img width="500" alt="Screen Shot 2021-01-05 at 4 51 50 PM" src="https://user-images.githubusercontent.com/63379814/103704647-9f76d600-4f77-11eb-9049-0fafd30b29aa.png">
-
 
 # Flask React Project
 
