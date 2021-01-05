@@ -1,8 +1,7 @@
 <h1 align="center">
-  ProTrader
+  ProTrader Documentation
 </h1>
 <h1 align="center">
-  Documentation
 </h1>
 <h1 align="center">
   <img src="https://cdn.worldvectorlogo.com/logos/react.svg" alt="js-logo" width="50">
@@ -14,6 +13,7 @@
 
 #### Database
 <img width="500" alt="Screen Shot 2021-01-05 at 4 51 50 PM" src="https://user-images.githubusercontent.com/63379814/103704647-9f76d600-4f77-11eb-9049-0fafd30b29aa.png">
+
 
 #### MVP
 User
