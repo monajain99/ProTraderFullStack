@@ -17,34 +17,34 @@
 
 #### MVP
 User
- login
- logout
- Demo user
- Authentication
+ - login
+ - logout
+ - Demo user
+ - Authentication
 
 Stocks
- Seach Stocks
- Add Socks to the Watchlist
- Edit Socks to Watchlist
- Delete Socks to WatchList
+ - Seach Stocks
+ - Add Socks to the Watchlist
+ - Edit Socks to Watchlist
+ - Delete Socks to WatchList
 
 Strategies
-  Create strategies
-  Edit strategies
-  Delete startegies
-  Like Strategies
+ - Create strategies
+ - Edit strategies
+ - Delete startegies
+ - Like Strategies
   
 User PortFolio
- displays acount value
- displays buying power
- displays recent transactions/orders
- displays current positions
- displays account graph
+ - displays acount value
+ - displays buying power
+ - displays recent transactions/orders
+ - displays current positions
+ - displays account graph
    
-Wacthlist
- Create Wachlists
- Edit Watchlist
- Delete WatchList
+Wacthlist (bonus)
+ - Create Wachlists
+ - Edit Watchlist
+ - Delete WatchList
 
 
 
