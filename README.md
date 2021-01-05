@@ -12,6 +12,9 @@
   <img src="https://cdn.vox-cdn.com/thumbor/fbrTLtxuP2D29o8VJUaE-u3NKfU=/0x0:792x613/1200x800/filters:focal(300x237:426x363)/cdn.vox-cdn.com/uploads/chorus_image/image/59850273/Docker_logo_011.0.png" alt="sqlalchemy-logo" width="50">
 </h1>
 
+# Database Schema
+<h1 align="center">
+<img src="https://drawsql.app/timsur/diagrams/copy-of-clickr-database-schema" alt="schema" width="500"/>
 
 # Flask React Project
 
