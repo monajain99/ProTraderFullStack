@@ -15,6 +15,39 @@
 #### Database
 <img width="500" alt="Screen Shot 2021-01-05 at 4 51 50 PM" src="https://user-images.githubusercontent.com/63379814/103704647-9f76d600-4f77-11eb-9049-0fafd30b29aa.png">
 
+#### MVP
+User
+ login
+ logout
+ Demo user
+ Authentication
+
+Stocks
+ Seach Stocks
+ Add Socks to the Watchlist
+ Edit Socks to Watchlist
+ Delete Socks to WatchList
+
+Strategies
+  Create strategies
+  Edit strategies
+  Delete startegies
+  Like Strategies
+  
+User PortFolio
+ displays acount value
+ displays buying power
+ displays recent transactions/orders
+ displays current positions
+ displays account graph
+   
+Wacthlist
+ Create Wachlists
+ Edit Watchlist
+ Delete WatchList
+
+
+
 # Flask React Project
 
 This is the backend for the Flask React project.
