@@ -12,7 +12,7 @@
 </h1>
 
 #### Database
-<img width="500" alt="Screen Shot 2021-01-05 at 4 51 50 PM" src="https://user-images.githubusercontent.com/63379814/103704647-9f76d600-4f77-11eb-9049-0fafd30b29aa.png">
+<img width="500" alt="Screen Shot 2021-01-05 at 4 51 50 PM" src="https://user-images.githubusercontent.com/63379814/103708823-4e6ae000-4f7f-11eb-9d21-09287d913db7.png">
 
 
 #### MVP
