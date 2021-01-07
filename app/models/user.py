@@ -7,10 +7,21 @@ class User(db.Model, UserMixin):
 
   id = db.Column(db.Integer, primary_key = True)
   username = db.Column(db.String(40), nullable = False, unique = True)
+  full_name = db.Column(db.String(100), nullable = False, unique = True)
   email = db.Column(db.String(255), nullable = False, unique = True)
   hashed_password = db.Column(db.String(255), nullable = False)
+  buying_power = db.Column(db.Integer, nullable = True)
+  # investment_power = db.Column(db.Integer, nullable = True)
+  image_url = db.Column(db.String(300), nullable=True)
+  about = db.Column(db.String(2000), nullable=True)
+  
+# user has many watchlist
+# user has many/one portfolio
+# user has many transactions
 
-
+  # userWatchlist =
+  # userPortfolio
+  # userTransactions
   @property
   def password(self):
     return self.hashed_password
@@ -29,5 +40,10 @@ class User(db.Model, UserMixin):
     return {
       "id": self.id,
       "username": self.username,
-      "email": self.email
+      "full_name": self.full_name,
+      "email": self.email,
+      "buying_power": self.buying_power,
+      # "investment_power": self.investment_power,
+      "about": self.about,
+      "image_url": self.image_url
     }
