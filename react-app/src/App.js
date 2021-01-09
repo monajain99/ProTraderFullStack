@@ -8,6 +8,8 @@ import UsersList from "./components/UsersList";
 import User from "./components/User";
 import HomeFeed from "./components/HomeFeed"
 import { authenticate } from "./services/auth";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Account from "./components/Account";
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -58,12 +60,23 @@ function App() {
           <User />
         </ProtectedRoute>
         <ProtectedRoute path="/" exact={true} authenticated={authenticated}>
-          <h1>My Home Page</h1>
+          <h1>CandleStick Chart for MSFT</h1>
           <HomeFeed />
         </ProtectedRoute>
-        <ProtectedRoute path="/trades" exact={true} authenticated={authenticated}>
+        <ProtectedRoute
+          path="/trades"
+          exact={true}
+          authenticated={authenticated}
+        >
           <h1>trades</h1>
-         
+        </ProtectedRoute>
+        <ProtectedRoute
+          path="/account"
+          exact={true}
+          authenticated={authenticated}
+        >
+          <h1>Account Value</h1>
+          <Account/>
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>

@@ -14,6 +14,8 @@ class User(db.Model, UserMixin):
   # investment_power = db.Column(db.Integer, nullable = True)
   image_url = db.Column(db.String(300), nullable=True)
   about = db.Column(db.String(2000), nullable=True)
+  watchlistId = db.Column(db.Integer, db.ForeignKey("watchlists.id"))
+  watchlist = db.relationship("Watchlist")
   
 # user has many watchlist
 # user has many/one portfolio
