@@ -6,11 +6,16 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "apisauce": "^2.0.1",
+    "bootstrap": "^4.5.3",
+    "d3-scale": "^3.2.3",
     "http-proxy-middleware": "^1.0.5",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.4.3",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-stockcharts": "^0.7.8"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,41 +1,29 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import ChartJS from "./Chartutils/Chart";
+import MadeData from "./Chartutils/Data";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 // const Alpaca = require(‘@alpacahq/alpaca-trade-api’);
 
 
+const HomeFeed = () => {
 
-function HomeFeed (){
+  const [chartsToDisplay, setChartsToDisplay] = useState([]);
   const [users, setUsers] = useState([]);
-  const [news, setNews] = useState([]);
 
-  // const { userId } = useParams();
 
- useEffect(() => {
-    if (!users) {
-      return;
-    }
-    async function fetchData() {
-      const response = await fetch("/api/users/");
-      const responseData = await response.json();
-      setUsers(responseData.users);
-      console.log(responseData.users[0]);
-    }
-    fetchData();
+  const getData = async () => {
+    const charts = [];
+    charts.push(<ChartJS key={1} data={MadeData} />);
+    setChartsToDisplay(charts);
+  };
+
+  useEffect(() => {
+    getData();
   }, []);
 
-  if (!users) {
-    return null;
-  }
-
-  return (
-    <div className="wholePageContainer">
-      <div className="bodyContainer">
-        <div className="feedContainer">
-          <h1 className="heading">HomeFeed</h1>
-        </div>
-      </div>
-    </div>
-  );
+  return <div className="App">{chartsToDisplay}</div>;
 };
+
 
 export default HomeFeed;

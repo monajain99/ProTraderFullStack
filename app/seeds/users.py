@@ -6,8 +6,12 @@ def seed_users():
 
     demo = User(username='Demo', full_name='Demo User', email='demo@aa.io', buying_power=10000000 ,
                 password='password')
+    watchlist = Watchlist(name = "watchlist")
+    watchlistContent = WatchlistContent(watchlistId = 1, stockId = 1)
 
     db.session.add(demo)
+    db.session.add(watchlist)
+    db.session.add(watchlistContent)
 
     db.session.commit()
 
@@ -17,4 +21,6 @@ def seed_users():
 # the auto incrementing primary key
 def undo_users():
     db.session.execute('TRUNCATE users;')
+    db.session.execute('TRUNCATE watchlists;')
+
     db.session.commit()

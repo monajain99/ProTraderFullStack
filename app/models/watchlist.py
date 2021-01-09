@@ -6,26 +6,23 @@ from .stock import Stock
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
 
+# # one watchlist many stocks
+# # one watchlist one user
+
 class Watchlist(db.Model):
-  __tablename__ = 'watchlists'
+  __tablename__ = "watchlists"
 
-  id = db.Column(db.Integer, primary_key = True)
-  stock_id = db.Column(db.ForeignKey("stocks.id"))
-  user_id = db.Column(db.ForeignKey("users.id"))
+  id = db.Column(db.Integer, primary_key=True)
+  name = db.Column(db.String(50))
+
+class WatchlistContent(db.Model):
+  __tablename__ = "watchlistContent"
   
-  watchlists = db.relationship("Stock", back_populates="stocks", cascade="all")
-  
-  user_id = db.relationship("User", back_populates="users", cascade="all")
+  id = db.Column(db.Integer, primary_key=True)
+  watchlistId = db.Column(db.Integer, db.ForeignKey("watchlists.id"))
+  stockId = db.Column(db.Integer, db.ForeignKey("stocks.id"))
+  stock = db.relationship("Stock")
+  watchlist = db.relationship("Watchlist")
 
 
-
-def to_dict(self):
-        return {
-          "id": self.id,
-          "user_id": len(self.users),
-          "stock_id": len(self.stocks)
-        }
-
-# one watchlist many stocks
-# one watchlist one user
 

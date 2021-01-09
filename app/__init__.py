@@ -33,7 +33,7 @@ app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(auth_routes, url_prefix='/api/auth')
 # app.register_blueprint(trade_routes, url_prefix='/api/trades')
 app.register_blueprint(stock_routes, url_prefix='/api/stocks')
-app.register_blueprint(stock_routes, url_prefix='/api/stocks/aapl')
+# app.register_blueprint(stock_routes, url_prefix='/api/stocks/aapl')
 
 db.init_app(app)
 Migrate(app, db)

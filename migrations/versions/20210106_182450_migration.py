@@ -68,6 +68,20 @@ def upgrade():
     sa.ForeignKeyConstraint(['stock_id'], ['stocks.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
+    op.create_table('watchlists',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.PrimaryKeyConstraint('id'),
+    sa.Column('name', sa.String(length=50), nullable=True)
+    )
+    op.create_table('watchlistContent',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('watchlistId', sa.Integer(), nullable=True),
+    sa.Column('stockId', sa.Integer(), nullable=True),
+    sa.ForeignKeyConstraint(['stockId'], ['stocks.id'], ),
+    sa.ForeignKeyConstraint(['watchlistId'], ['watchlists.id'], ),
+    sa.PrimaryKeyConstraint('id')
+    )
+
     # ### end Alembic commands ###
 
 
@@ -77,5 +91,10 @@ def downgrade():
     op.drop_table('stock_price_minutes')
     op.drop_table('users')
     op.drop_table('strategies')
+    op.drop_table('watchlistContent')
+    op.drop_table('watchlists')
     op.drop_table('stocks')
+
+
+
     # ### end Alembic commands ###
