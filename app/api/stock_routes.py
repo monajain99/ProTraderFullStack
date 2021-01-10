@@ -8,7 +8,7 @@ from app.forms.stock_form import AddStockForm
 stock_routes = Blueprint('stocks', __name__)
 
 @stock_routes.route('/')
-def stocks():
+def getStocks():
     api = tradeapi.REST(Config.API_KEY, Config.SECRET_KEY, base_url=Config.API_URL)
     print("stock route hit")
     assets = api.list_assets()
