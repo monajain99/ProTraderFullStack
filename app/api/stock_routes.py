@@ -13,14 +13,16 @@ def getStocks():
     print("stock route hit")
     assets = api.list_assets()
     # return json.loads(assests.content)
+    stockList = {}
     for asset in assets:
         try:
             if asset.status == 'active' and asset.tradable:
-              pass
-              print({asset.symbol}, {asset.name}, {asset.exchange})
+              stockList[asset.symbol]=(asset.name,asset.exchange)
+              #print({asset.symbol}, {asset.name}, {asset.exchange})
         except Exception as e:
             print(asset.symbol)
-            return(e)
+            return (e)
+    return(stockList)
 
 
 @stock_routes.route('/<string:ticker>')
